@@ -126,7 +126,7 @@ def f_remind(bot, trigger):
     elif Nick(teller) == tellee:
         bot.say('You can %s yourself that.' % verb)
     else:
-        bot.say("Hey, I'm not as stupid as Monty you know!")
+        bot.say("Hey, Nick(teller): %s :: tellee: %s" % (Nick(teller),tellee))
 
     dumpReminders(bot.tell_filename, bot.memory['reminders'], bot.memory['tell_lock'])  # @@ tell
 
