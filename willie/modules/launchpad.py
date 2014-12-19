@@ -39,7 +39,7 @@ def issue_info(bot, trigger, match=None):
 
     for bug in bugs:
         if search_for_raw in bug.title:
-            bot.say('found: %s' % bug.title)
+            bot.say('found: %s at : %s' % (bug.title, bug.web_link))
     bot.say("That's all I found.")
 
 
