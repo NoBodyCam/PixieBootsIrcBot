@@ -81,7 +81,7 @@ def setup(self):
 
 @commands('tell', 'ask')
 @nickname_commands('tell', 'ask')
-@example('Willie, tell Embolalia he broke something again.')
+@example('PixieBoots: tell <nick> can you look at the latest version of review #######.')
 def f_remind(bot, trigger):
     """Give someone a message the next time they're seen"""
     teller = trigger.nick
